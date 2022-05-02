@@ -1,0 +1,1133 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<meta name="viewport"
+		content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+	<!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+	<meta http-equiv="Content-Security-Policy"
+		content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IBE APP</title>
+    <link href="jquery-mobile/jquery.mobile.theme-1.3.0.min.css" rel="stylesheet" type="text/css">
+	<link href="themes/IBE-APP-THEME.css" rel="stylesheet" type="text/css">
+	<link href="jquery-mobile/jquery.mobile.structure-1.3.0.min.css" rel="stylesheet" type="text/css">
+	<link href="css/index.css" rel="stylesheet" type="text/css">
+	<link href="fonts/css/all.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+    <script src="jquery-mobile/jquery-1.11.1.min.js"></script>
+    <script src="jquery-mobile/jquery.mobile-1.3.0.min.js"></script>
+</head>
+
+<body>
+
+
+	<!-- /inicio -->
+
+	<div data-role="page" id="inicio" class="menu-inicio">
+		<div data-role="content">
+
+			  <script>
+				         setTimeout(function(){
+				            window.location.href = '#ingreso';
+				         }, 3000);
+				      </script>
+
+			<div class="logo text-center"><a href="#"><img src="img/logo ibe.png" width="168" height="168"
+						alt="" /></a></div>
+
+
+		</div>
+	</div>
+
+
+
+	<!-- /ingreso -->
+	<div data-role="page" id="ingreso" class="menu-color text-center">
+		<div data-role="content">
+
+			<div class="logo text-center"><img src="img/logo ibe.png" width="168" height="168" alt=""/></div>
+
+			<div>
+
+				<h1 style="color: white">Te damos la bienvenida</h1>
+				<p style="color: white">Regístrate para acceder al Identificador de Bullying Escolar</p>
+
+			</div>
+
+			<div>
+
+				<form>
+					<input type="text" id="usuario" placeholder="Usuario">
+					<input type="password" id="contraseña" placeholder="Contraseña">
+
+
+					<a style="color: #BE1E2D" href="#resumen-1" data-role="button">INGRESAR</a>
+
+					<p style="color: white">¿Olvidaste tu contraseña?</p>
+
+
+				</form>
+
+				<div>
+
+					<p style="color: white">Si aún no tienes una cuenta <a style="color: antiquewhite"
+							href="#registro">REGISTRATE</a></p>
+
+
+				</div>
+
+
+			</div>
+		</div>
+
+	</div>
+	
+	<!-- /registro -->
+	
+	<div data-role="page" id="registro">
+	  <div data-role="content"><div class="testbox">
+		  <br>
+  <h1 style="color: #BE1E2D" align="center" ><b>Registro</b></h1>
+
+  <form></form><form action="/">
+      <hr>
+    <div class="accounttype">
+      <input type="radio" value="None" id="radioOne" name="account" checked/>
+      <label for="radioOne" class="radio" chec>Estudiante</label>
+      <input type="radio" value="None" id="radioTwo" name="account" />
+      <label for="radioTwo" class="radio">Directivo/Docente</label>
+	  <input type="radio" value="None" id="radioThree" name="account" />
+      <label for="radioThree" class="radio">Psicólogo</label>
+    </div>
+ 
+  <label id="icon" for="name"><i class="icon-envelope "></i></label>
+  <input type="text" name="name" id="name" placeholder="Email institucional @edu.co" required/>
+<input type="text" name="name" id="name.2" placeholder="Nombres y apellidos" required/>
+  <label id="icon3" for="name"><i class="icon-shield"></i></label>
+  <input type="password" name="name" id="name.3" placeholder="Contraseña" required/>
+  <div class="gender">
+    <input type="radio" value="None" id="male" name="gender" checked/>
+    <label for="male" class="radio" chec>Masculino</label>
+    <input type="radio" value="None" id="female" name="gender" />
+    <label for="female" class="radio">Femenino</label>
+	<input type="radio" value="None" id="other" name="gender" checked/>
+    <label for="other" class="radio" chec>Otro</label>
+   </div> 
+   <p align="center">Al hacer clic en Registrarse, usted acepta nuestros <a href="#">términos y condiciones.</a></p>
+   <a style="color: white" href="#resumen-1" class="button b"> <center>Registrarse</center></a>
+		  <hr>
+  </form>
+</div></div>
+</div>
+	
+	
+	
+<!-- /resumen 1 -->
+	<div data-role="page" id="resumen-1">
+		<div data-role="content">
+
+			<div class="circulo blanco bg-rojo text-center">
+
+				<div class="text-circulo ne">
+
+					<h1>Encuentra</h1>
+					<p>Lo que buscas de una manera práctica y sencilla.</p>
+
+				</div>
+
+			</div>
+
+		</div>
+		<div data-role="footer" data-position="fixed" class="slider">
+			<div class="ui-grid-b">
+
+
+				<div class="ui-block-a">
+
+					<a href="#menu" data-transition="slidefade">Omitir</a>
+				</div>
+				<div class="ui-block-b">
+
+					<a href="#resumen-1" class="btn-slider active"><span class="ocultar">1</span></a>
+					<a href="#resumen-2" class="btn-slider"><span class="ocultar">2</span></a>
+					<a href="#resumen-3" class="btn-slider"><span class="ocultar">3</span></a>
+				</div>
+
+				<div class="ui-block-c b"><a href="#resumen-2" data-transition="slidefade">Siguiente</a></div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!-- /resumen 2 -->
+	<div data-role="page" id="resumen-2">
+		<div data-role="content">
+
+			<div class="circulo blanco bg-rojo text-center">
+
+				<div class="text-circulo">
+
+					<h1>Descubre</h1>
+					<p>Todos los consejos que tenemos para tu salud física y mental.</p>
+
+				</div>
+
+			</div>
+
+		</div>
+		<div data-role="footer" data-position="fixed" class="slider">
+			<div class="ui-grid-b">
+
+				<div class="ui-block-a">
+
+					<a href="#menu" data-transition="slidefade">Omitir</a>
+				</div>
+				<div class="ui-block-b">
+
+					<a href="#resumen-1" class="btn-slider"><span class="ocultar">1</span></a>
+					<a href="#resumen-2" class="btn-slider active"><span class="ocultar">2</span></a>
+					<a href="#resumen-3" class="btn-slider"><span class="ocultar">3</span></a>
+				</div>
+
+				<div class="ui-block-c"><a href="#resumen-3" data-transition="slidefade">Siguiente</a></div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!-- /resumen 3 -->
+	<div data-role="page" id="resumen-3">
+		<div data-role="content">
+
+			<div class="circulo blanco bg-rojo text-center">
+
+				<div class="text-circulo">
+
+					<h1>Conoce</h1>
+					<p>Todo lo que puedes hacer para sentierte bien.</p>
+
+				</div>
+
+			</div>
+
+		</div>
+		<div data-role="footer" data-position="fixed" class="slider">
+			<div class="ui-grid-b">
+
+				<div class="ui-block-a">
+
+					<a href="#menu" data-transition="slidefade">Omitir</a>
+				</div>
+				<div class="ui-block-b">
+
+					<a href="#resumen-1" class="btn-slider"><span class="ocultar">1</span></a>
+					<a href="#resumen-2" class="btn-slider"><span class="ocultar">2</span></a>
+					<a href="#resumen-3" class="btn-slider active"><span class="ocultar">3</span></a>
+				</div>
+
+				<div class="ui-block-c"><a href="#menu" data-transition="slidefade">Siguiente</a></div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!-- /menu -->
+
+
+	<div data-role="page" id="menu">
+		<div class="menu-color">
+			<div data-role="content">
+
+
+
+				<div class="logo text-center">
+
+					<img src="img/logo ibe.png" width="139" height="139" alt="" />
+				</div>
+
+				<div class="menu-principal medianil-xy">
+
+
+					<div class="ui-grid-a">
+
+						<div class="ui-block-a"><a href="#mi-colegio" class="btn-menu-1" data-transition="slidefade">Mi
+								Colegio</a></div>
+						<div class="ui-block-b"><a href="#estudiantes" class="btn-menu-2"
+								data-transition="slidefade">Estudiantes</a></div>
+
+						<div class="ui-block-a"><a href="#diagnostico" class="btn-menu-3"
+								data-transition="slidefade">Diagnóstico</a></div>
+						<div class="ui-block-b"><a href="#docentes" class="btn-menu-4"
+								data-transition="slidefade">Docentes</a></div>
+
+						<div class="ui-block-a"><a href="#varios" class="btn-menu-5"
+								data-transition="slidefade">Varios</a></div>
+						<div class="ui-block-b"><a href="#perfil" class="btn-menu-6"
+								data-transition="slidefade">Perfil</a></div>
+
+
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- /mi colegio -->
+
+	<div data-role="page" id="mi-colegio">
+		<div data-role="panel" id="menu-panel-1" class="menu-deslizable" data-display="overlay" data-position="right">
+
+
+			<!-- panel content -->
+
+			<h2 class="text-right">Menú</h2>
+			<ul class="text-right">
+
+				<li><a href="#menu">Inicio</a></li>
+				<li><a href="#mi-colegio">Mi colegio</a></li>
+				<li><a href="#estudiantes">Estudiantes</a></li>
+				<li><a href="#diagnostico">Diagnóstico</a></li>
+				<li><a href="#docentes">Docentes</a></li>
+				<li><a href="#varios">Varios</a></li>
+				<li><a href="#perfil">Perfil</a></li>
+
+			</ul>
+
+
+
+			<p class="text-center"><a href="#ingreso" class="btn btn-azul">CERRAR SESIÓN</a></p>
+
+		</div>
+
+
+		<!-- /panel -->
+
+		<div data-role="header" data-position="fixed" class="barra-top">
+
+
+			<div class="ui-grid-b cabecera">
+
+				<div class="ui-block-a"><a href="#menu" class="btn link-blanco" data-direction="reverse"
+						data-transition="slidefade">
+						<i class="fas fa-arrow-left"></i>
+						<spam class="ocultar">Regresar</spam>
+					</a></div>
+
+				<div class="ui-block-b text-center">
+					<h1>Mi colegio</h1>
+				</div>
+
+				<div class="ui-block-c text-right"><a href="#menu-panel-1" class="btn link-blanco"><i
+							class="fas fa-bars"></i></a></div>
+
+			</div>
+
+		</div>
+		<div data-role="content" class="p-0">
+
+			<div class="list-item bg-1 blanco">
+
+				<div class="ui-grid-a title-item">
+
+					<div class="ui-block-a text-left link-blanco" data-direction="reverse" data-transition="slidefade">
+						<p class="small">Imagen de referencia</p>
+						<h2>¿Quienes somos?</h2>
+
+					</div>
+
+					<div class="ui-block-b text-right">
+
+						<p class="megusta">
+							<a href="#megusta" class="link-blanco">
+								<i class="fas fa-heart"></i>
+								428 me gusta</a>
+
+
+							<a href="#quienesomos">
+								<i class="fas fa-chevron-right"></i>
+							</a>
+						</p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+
+			<div class="list-item bg-2 blanco">
+				<div class="ui-grid-a title-item">
+					<div class="ui-block-a text-left link-blanco" data-direction="reverse" data-transition="slidefade">
+						<p class="small">Imagen de referencia</p>
+						<h2>Misión-Visión</h2>
+					</div>
+					<div class="ui-block-b text-right">
+						<p class="megusta"> <a href="#megusta" class="link-blanco"> <i class="fas fa-heart"></i> 198 me
+								gusta</a> <a href="#quienesomos"> <i class="fas fa-chevron-right"></i> </a></p>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="list-item bg-3 blanco">
+				<div class="ui-grid-a title-item">
+					<div class="ui-block-a text-left link-blanco" data-direction="reverse" data-transition="slidefade">
+						<p class="small">Imagen de referencia</p>
+						<h2>Símbolos</h2>
+					</div>
+					<div class="ui-block-b text-right">
+						<p class="megusta"> <a href="#megusta" class="link-blanco"> <i class="fas fa-heart"></i> 735 me
+								gusta</a> <a href="#quienesomos"> <i class="fas fa-chevron-right"></i></a></p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="list-item bg-4 blanco">
+				<div class="ui-grid-a title-item">
+					<div class="ui-block-a text-left link-blanco" data-direction="reverse" data-transition="slidefade">
+						<p class="small">Imagen de referencia</p>
+						<h2>Calidad</h2>
+					</div>
+					<div class="ui-block-b text-right">
+						<p class="megusta"> <a href="#megusta" class="link-blanco"> <i class="fas fa-heart"></i> 681 me
+								gusta</a> <a href="#quienesomos"> <i class="fas fa-chevron-right"></i></a></p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="list-item bg-5 blanco">
+				<div class="ui-grid-a title-item">
+					<div class="ui-block-a text-left link-blanco" data-direction="reverse" data-transition="slidefade">
+						<p class="small">Imagen de referencia</p>
+						<h2>Personal 2022</h2>
+					</div>
+					<div class="ui-block-b text-right">
+						<p class="megusta"> <a href="#megusta" class="link-blanco"> <i class="fas fa-heart"></i> 442 me
+								gusta</a> <a href="#quienesomos"> <i class="fas fa-chevron-right"></i></a></p>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+		</div>
+
+		<div class="barra-pie" data-position="fixed" data-role="footer" data-theme="b">
+
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#menu"><i class="fas fa-home"></i></a></li>
+					<li><a href="#favoritos"><i class="fas fa-heart"></i></a></li>
+					<li><a href="#perfil"><i class="fas fa-user"></i></a></li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Perfil  -->
+
+	<div data-role="page" id="perfil">
+		<div data-role="panel" id="menu-panel-2" class="menu-deslizable" data-display="overlay" data-position="right">
+
+
+			<!-- panel content goes here -->
+
+			<h2 class="text-right">Menú</h2>
+			<ul class="text-right">
+
+				<li><a href="#menu">Inicio</a></li>
+				<li><a href="#mi-colegio">Mi colegio</a></li>
+				<li><a href="#estudiantes">Estudiantes</a></li>
+				<li><a href="#gobierno-escolar">Gobierno escolar</a></li>
+				<li><a href="#docentes">Docentes</a></li>
+				<li><a href="#varios">Varios</a></li>
+				<li><a href="#perfil">Perfil</a></li>
+
+			</ul>
+
+
+
+			<p class="text-center"><a href="#ingreso" class="btn btn-azul">CERRAR SESIÓN</a></p>
+
+		</div><!-- /panel -->
+
+
+		<div data-role="header" data-position="fixed" class="barra-top">
+
+
+			<div class="ui-grid-b cabecera">
+
+				<div class="ui-block-a"><a href="#menu" class="btn link-blanco" data-direction="reverse"
+						data-transition="slidefade">
+						<i class="fas fa-arrow-left"></i>
+						<spam class="ocultar">Regresar</spam>
+					</a></div>
+
+				<div class="ui-block-b text-center">
+					<h1>Perfil</h1>
+				</div>
+
+				<div class="ui-block-c text-right"><a href="#menu-panel-2" class="btn link-blanco"><i
+							class="fas fa-bars"></i></a></div>
+
+			</div>
+
+		</div>
+
+
+		<div data-role="content p-0">
+			
+
+			<div class="list-item bg-perfil">
+				
+
+				<div class="image-perfil"></div>
+				
+				
+			</div>
+		<br>
+
+			<div class="contenedor">
+
+				<br>
+	
+			<center><h2>Datos de Perfil</h2></center>	<br>
+
+				<ul>
+					<li> <b>Nombres:</b> Pedro León </li>
+					<hr>
+					<li> <b>Apellidos:</b> Sánchez Rendón</li>
+					<hr>
+					<li> <b>Usuario:</b> Plsanchezr</li>
+					<hr>
+					<li> <b>Email:</b> plsanchezr@iefundadores.edu.com</li>
+					<hr>
+					<li> <b>Jornada:</b> Mañana</li>
+				</ul>
+
+				<hr>
+
+				<ul>
+					
+					<li> <b>Mostrar foto:</b>
+						<form>
+							<div data-role="fieldcontain">
+								<label for="flip-6"><span class="ocultar">Flip toggle switch:</span></label>
+								<select name="flip-6" id="flip-6" data-role="slider">
+									<option value="off">No</option>
+									<option value="on">Sí</option>
+								</select>
+							</div>
+						</form>
+					</li>
+
+					<li> <b>Mostrar Me gusta:</b>
+						<form>
+							<div data-role="fieldcontain">
+								<label for="flip-7"><span class="ocultar">Flip toggle switch:</span></label>
+								<select name="flip-7" id="flip-7" data-role="slider">
+									<option value="off">No</option>
+									<option value="on">Sí</option>
+								</select>
+							</div>
+						</form>
+					</li>
+
+				</ul>
+
+
+
+			</div>
+
+		</div>
+		<div class="barra-pie" data-position="fixed" data-role="footer" data-theme="b">
+
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#menu"><i class="fas fa-home"></i></a></li>
+					<li><a href="#favoritos"><i class="fas fa-heart"></i></a></li>
+					<li><a href="#perfil"><i class="fas fa-user"></i></a></li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Estudiantes  -->
+
+	<div data-role="page" id="estudiantes">
+		<div data-role="panel" id="menu-panel-6" class="menu-deslizable" data-display="overlay" data-position="right">
+
+
+
+
+
+			<!-- panel content goes here -->
+
+			<h2 class="text-right">Menú</h2>
+			<ul class="text-right">
+
+				<li><a href="#menu">Inicio</a></li>
+				<li><a href="#mi-colegio">Mi colegio</a></li>
+				<li><a href="#estudiantes">Estudiantes</a></li>
+				<li><a href="#diagnostico">Diagnóstico</a></li>
+				<li><a href="#docentes">Docentes</a></li>
+				<li><a href="#varios">Varios</a></li>
+				<li><a href="#perfil">Perfil</a></li>
+
+			</ul>
+
+
+
+			<p class="text-center"><a href="#ingreso" class="btn btn-azul">CERRAR SESIÓN</a></p>
+
+
+
+
+
+		</div><!-- /panel -->
+
+
+
+		<div data-role="header" data-position="fixed" class="barra-top">
+
+
+
+			<div class="ui-grid-b cabecera">
+
+				<div class="ui-block-a"><a href="#menu" class="btn link-blanco" data-direction="reverse"
+						data-transition="slidefade">
+						<i class="fas fa-arrow-left"></i>
+						<spam class="ocultar">Regresar</spam>
+					</a></div>
+
+				<div class="ui-block-b text-center">
+					<h1>Estudiantes</h1>
+				</div>
+
+				<div class="ui-block-c text-right"><a href="#menu-panel-6" class="btn link-blanco"><i
+							class="fas fa-bars"></i></a></div>
+
+			</div>
+
+		</div>
+
+		<div class="blog">
+
+			<h2>Estudiantes</h2>
+			<p>Acá podrás encontrar toda la información relacionada con los estudiantes.</p>
+		</div>
+
+		<ul data-role="listview">
+
+
+			<li><a href="https://login.master2000.net/ingreso/?A=105001026697&&">
+					<h3>Master2000</h3>
+					<p>Ingresa a la plataforma evaluativa para ver tus notas</p>
+				</a></li>
+
+
+			<li><a href="https://profewilliam2019.wixsite.com/mtiefundadores">
+					<h3>Media técnica Diseño Gráfico</h3>
+					<p>Conoce los trabajos hechos por los estudiantes</p>
+				</a></li>
+
+
+			<li><a
+					href="https://modulo.master2000.net/recursos/uploads/557/ALTERNANCIA/HORARIOPRESENCIALJORNADAMANANA.pdf">
+					<h3>Horario</h3>
+					<p>Conoce el horario de la jornada de la mañana</p>
+				</a></li>
+
+
+			<li><a href="https://modulo.master2000.net/recursos/uploads/557/ALTERNANCIA/JORNADAPRESENCIALTARDE.pdf">
+					<h3>Horario</h3>
+					<p>Conoce el horario de la jornada de la tarde</p>
+				</a></li>
+
+
+			<li><a href="https://zeno.fm/fundadores-stereo/">
+					<h3>Emisora escolar</h3>
+					<p>Escucha la emisora escolar "Fundadores Stereo"</p>
+				</a></li>
+
+
+			<li><a
+					href="https://modulo.master2000.net/recursos/uploads/557/archivosinicio/Notifundadores20211Terminado.pdf">
+					<h3>Periódico escolar</h3>
+					<p>Lee nuestro periódico escolar "Notifundadores"</p>
+				</a></li>
+
+
+
+		</ul>
+
+		<br>
+
+
+
+
+		<div class="barra-pie" data-position="fixed" data-role="footer" data-theme="b">
+
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#menu"><i class="fas fa-home"></i></a></li>
+					<li><a href="#favoritos"><i class="fas fa-heart"></i></a></li>
+					<li><a href="#perfil"><i class="fas fa-user"></i></a></li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Varios  -->
+
+
+	<div data-role="page" id="varios">
+		<div data-role="panel" id="menu-panel-3" class="menu-deslizable" data-display="overlay" data-position="right">
+
+
+
+
+
+			<!-- panel content goes here -->
+
+			<h2 class="text-right">Menú</h2>
+			<ul class="text-right">
+
+				<li><a href="#menu">Inicio</a></li>
+				<li><a href="#mi-colegio">Mi colegio</a></li>
+				<li><a href="#estudiantes">Estudiantes</a></li>
+				<li><a href="#diagnostico">Diagnóstico</a></li>
+				<li><a href="#docentes">Docentes</a></li>
+				<li><a href="#varios">Varios</a></li>
+				<li><a href="#perfil">Perfil</a></li>
+
+			</ul>
+
+
+
+			<p class="text-center"><a href="#ingreso" class="btn btn-azul">CERRAR SESIÓN</a></p>
+
+
+
+
+
+		</div><!-- /panel -->
+
+
+
+		<div data-role="header" data-position="fixed" class="barra-top">
+
+
+
+			<div class="ui-grid-b cabecera">
+
+				<div class="ui-block-a"><a href="#menu" class="btn link-blanco" data-direction="reverse"
+						data-transition="slidefade">
+						<i class="fas fa-arrow-left"></i>
+						<spam class="ocultar">Regresar</spam>
+					</a></div>
+
+				<div class="ui-block-b text-center">
+					<h1>Varios</h1>
+				</div>
+
+				<div class="ui-block-c text-right"><a href="#menu-panel-3" class="btn link-blanco"><i
+							class="fas fa-bars"></i></a></div>
+
+			</div>
+
+		</div>
+
+		<div class="blog">
+
+			<h2>Contenidos varios</h2>
+			<p>Acá podrás encontrar informaciones variadas de nuestra institución educativa.</p>
+		</div>
+
+		<ul data-role="listview">
+
+			<li><a href="https://forms.gle/1cvUHSJJhmPKGNec7">
+					<h3>Botón Antibullying</h3>
+					<p>DENUNCIA AQUÍ</p>
+				</a></li>
+
+
+			<li><a href="https://modulo.master2000.net/recursos/uploads/557/BIBLIOTECA/orejas-de-mariposa.pdf">
+					<h3>Biblioteca en casa</h3>
+					<p>Libro recomendado de la semana</p>
+				</a></li>
+			
+			
+			<li><a href="https://www.youtube.com/watch?v=DqUTd5eSRiw&ab_channel=APRENDEFACILTV">
+					<h3>Himno</h3>
+					<p>Escucha el himno de nuestra institución</p>
+				</a></li>
+
+
+			<li><a href="https://forms.gle/yTotrxVRQ5oQy8E59">
+					<h3>Atención Psicosocial</h3>
+					<p>Solicitud para atención psicosocial</p>
+				</a></li>
+
+
+			<li><a href="https://media.master2000.net/menu/557/4370/mper_arch_42883_POA%202021-2%20(2).pdf">
+					<h3>Plan operativo anual 2022</h3>
+					<p>Detalles del plan operativo del presente año</p>
+				</a></li>
+
+
+			<li><a
+					href="https://media.master2000.net/menu/557/8013/mper_118166_Protocolo%20de%20Bioseguridad%20de%20la%20Institución%20Educativa%20Fundadores%20final.pdf">
+					<h3>Protocolo de bioseguridad</h3>
+					<p>Conoce los protocolos de bioseguridad de la institución</p>
+				</a></li>
+
+
+
+
+			<li><a href="https://media.master2000.net/menu/557/4370/mper_arch_42878_MISIÓN%20VISION.pdf">
+					<h3>Misión-Visión</h3>
+					<p>Conoce la misión-visión de nuestra institución</p>
+				</a></li>
+
+
+			<li><a href="https://media.master2000.net/menu/557/4370/mper_arch_44790_POLITICA%20DE%20CALIDAD.pdf">
+					<h3>Política de calidad</h3>
+					<p>Conoce la política de calidad de nuestra institución</p>
+				</a></li>
+
+
+
+			<li><a href="http://www.cristic.com/juegos-educativos/">
+					<h3>Juegos educativos</h3>
+					<p>Descubre divertidos algunos juegos educativos</p>
+				</a></li>
+
+
+			<li><a href="https://modulo.master2000.net/recursos/uploads/557/archivosinicio/MANUALDECONVIVENCIA.pdf">
+					<h3>Manual de convivencia</h3>
+					<p>Conoce el manual de convivencia de la institución"</p>
+				</a></li>
+
+			<li><a href="https://modulo.master2000.net/recursos/uploads/557/archivosinicio/PEI.pdf">
+					<h3>Proyecto educativo institucional</h3>
+					<p>Conoce el P.E.I. de la institución</p>
+				</a></li>
+
+			<li><a href="https://modulo.master2000.net/recursos/uploads/557/archivosinicio/SIE.pdf">
+					<h3>Sistema institucional de evaluación</h3>
+					<p>Conoce el S.I.E. de la institución</p>
+				</a></li>
+
+			<li><a href="https://modulo.master2000.net/recursos/uploads/557/archivosinicio/MODELOHUMANISTA.pdf">
+					<h3>Modelo pedagógico</h3>
+					<p>Conoce el modelo padagógico de la institución</p>
+				</a></li>
+
+		</ul>
+
+		<br>
+
+
+
+
+		<div class="barra-pie" data-position="fixed" data-role="footer" data-theme="b">
+
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#menu"><i class="fas fa-home"></i></a></li>
+					<li><a href="#favoritos"><i class="fas fa-heart"></i></a></li>
+					<li><a href="#perfil"><i class="fas fa-user"></i></a></li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Gobierno escolar  -->
+
+
+<div data-role="page" id="diagnostico">
+		<div data-role="panel" id="menu-panel-4" class="menu-deslizable" data-display="overlay" data-position="right">
+
+
+
+
+
+			<!-- panel content goes here -->
+
+			<h2 class="text-right">Menú</h2>
+			<ul class="text-right">
+
+				<li><a href="#menu">Inicio</a></li>
+				<li><a href="#mi-colegio">Mi colegio</a></li>
+				<li><a href="#estudiantes">Estudiantes</a></li>
+				<li><a href="#diagnostico">Diagnóstico</a></li>
+				<li><a href="#docentes">Docentes</a></li>
+				<li><a href="#varios">Varios</a></li>
+				<li><a href="#perfil">Perfil</a></li>
+
+			</ul>
+
+
+
+			<p class="text-center"><a href="#ingreso" class="btn btn-azul">CERRAR SESIÓN</a></p>
+
+
+
+
+
+		</div><!-- /panel -->
+
+
+
+		<div data-role="header" data-position="fixed" class="barra-top">
+
+
+
+			<div class="ui-grid-b cabecera">
+
+				<div class="ui-block-a"><a href="#menu" class="btn link-blanco" data-direction="reverse"
+						data-transition="slidefade">
+						<i class="fas fa-arrow-left"></i>
+						<spam class="ocultar">Regresar</spam>
+					</a></div>
+
+				<div class="ui-block-b text-center">
+					<h1>Diagnóstico</h1>
+				</div>
+
+				<div class="ui-block-c text-right"><a href="#menu-panel-4" class="btn link-blanco"><i
+							class="fas fa-bars"></i></a></div>
+
+			</div>
+
+		</div>
+
+		<div class="blog">
+
+			<h1>Diagnóstico</h1>
+			<h5>Acá podrás encontrar una prueba diagnóstica para identificar tu caso.</h5>
+			
+		</div>
+		<div data-role="fieldcontain">
+		<center><label for="pregunta1">¿Cómo te sientes hoy?</label></center>
+		  <input type="text" name="pregunta1" id="pregunta1" placeholder="Escriba su respuesta"  value=""  /> 
+  </div>
+	
+<div data-role="fieldcontain">
+		<center><label for="pregunta2">Amplia y explica tu caso en particular, sino deseas expresarte por acá, puedes hacerlo junto al psicólogo.</label></center>
+		  <input type="text" name="pregunta2" id="pregunta2" placeholder="Escriba su respuesta"  value=""  /></div>
+		
+	<center><div data-role="fieldcontain">
+	  <fieldset data-role="controlgroup3" data-type="horizontal">
+	    <legend>¿Haz sufrido acoso?</legend>
+	    <input type="radio" name="SíNo" id="SíNo_0" value="" />
+	    <label for="SíNo_0">Sí</label>
+	    <input type="radio" name="SíNo" id="SíNo_1" value="" />
+	    <label for="SíNo_1">No</label>
+      </fieldset>
+  </div></center>
+	
+	
+	<center><div data-role="fieldcontain">
+	  <fieldset data-role="controlgroup2" data-type="horizontal">
+	    <legend>¿Haz sufrido alguna inseguridad emocional?</legend>
+	    <input type="radio" name="SíNo2" id="SíNo2_0" value="" />
+	    <label for="SíNo2_0">Sí</label>
+	    <input type="radio" name="SíNo2" id="SíNo2_1" value="" />
+	    <label for="SíNo2_1">No</label>
+      </fieldset>
+  </div></center>
+	
+		<center><div data-role="fieldcontain">
+	  <fieldset data-role="controlgroup1" data-type="horizontal">
+	    <legend>¿Haz sufrido algún tipo de discriminación?</legend>
+	    <input type="radio" name="SíNo3" id="SíNo3_0" value="" />
+	    <label for="SíNo3_0">Sí</label>
+	    <input type="radio" name="SíNo3" id="SíNo3_1" value="" />
+	    <label for="SíNo3_1">No</label>
+      </fieldset>
+  </div></center>
+	
+	<a href="#menu"><button>Enviar</button></a>
+		
+	
+	
+
+		
+
+
+
+
+		<div class="barra-pie" data-position="fixed" data-role="footer" data-theme="b">
+
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#menu"><i class="fas fa-home"></i></a></li>
+					<li><a href="#favoritos"><i class="fas fa-heart"></i></a></li>
+					<li><a href="#perfil"><i class="fas fa-user"></i></a></li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Docentes  -->
+
+	<div data-role="page" id="docentes">
+		<div data-role="panel" id="menu-panel-7" class="menu-deslizable" data-display="overlay" data-position="right">
+
+
+
+
+
+			<!-- panel content goes here -->
+
+			<h2 class="text-right">Menú</h2>
+			<ul class="text-right">
+
+				<li><a href="#menu">Inicio</a></li>
+				<li><a href="#mi-colegio">Mi colegio</a></li>
+				<li><a href="#estudiantes">Estudiantes</a></li>
+				<li><a href="#diagnostico">Diagnóstico</a></li>
+				<li><a href="#docentes">Docentes</a></li>
+				<li><a href="#varios">Varios</a></li>
+				<li><a href="#perfil">Perfil</a></li>
+
+			</ul>
+
+
+
+			<p class="text-center"><a href="#ingreso" class="btn btn-azul">CERRAR SESIÓN</a></p>
+
+
+
+
+
+		</div><!-- /panel -->
+
+
+
+		<div data-role="header" data-position="fixed" class="barra-top">
+
+
+
+			<div class="ui-grid-b cabecera">
+
+				<div class="ui-block-a"><a href="#menu" class="btn link-blanco" data-direction="reverse"
+						data-transition="slidefade">
+						<i class="fas fa-arrow-left"></i>
+						<spam class="ocultar">Regresar</spam>
+					</a></div>
+
+				<div class="ui-block-b text-center">
+					<h1>Docentes</h1>
+				</div>
+
+				<div class="ui-block-c text-right"><a href="#menu-panel-7" class="btn link-blanco"><i
+							class="fas fa-bars"></i></a></div>
+
+			</div>
+
+		</div>
+
+		<div class="blog">
+
+			<h2>Docentes</h2>
+			<p>Acá podrás encontrar toda la información relacionada con los docentes.</p>
+		</div>
+
+		<ul data-role="listview">
+
+			<li><a
+					href="https://media.master2000.net/menu/557/4571/mper_arch_103440_DIRECTORIO%20DE%20DOCENTES%20Y%20DIRECTIVOS%20PRINCIPAL.pdf">
+					<h3>Directorio docentes</h3>
+					<p>Conoce el directorio de docentes de la sede Principal</p>
+				</a></li>
+
+
+			<li><a
+					href="https://media.master2000.net/menu/557/4571/mper_arch_103441_DIRECTORIO%20DE%20DOCENTES%20Y%20DIRECTIVOS%20SOCORRO.pdf">
+					<h3>Directorio docentes</h3>
+					<p>Conoce el directorio de docentes de la sede El Socorro</p>
+				</a></li>
+
+
+			<li><a
+					href="https://media.master2000.net/menu/557/4571/mper_arch_103442_DIRECTORIO%20DE%20DOCENTES%20Y%20DIRECTIVOS%20SABATINOS.pdf">
+					<h3>Directorio docentes</h3>
+					<p>Conoce el directorio de docentes de la jornada sabatina</p>
+				</a></li>
+
+
+			<li><a href="https://media.master2000.net/menu/557/4571/mper_arch_42914_MANUAL%20DE%20FUNCIONES%20AC.pdf">
+					<h3>Manual de funciones de docentes</h3>
+					<p>Conoce las funciones de los docentes y directivos</p>
+				</a></li>
+
+
+			<li><a href="https://media.master2000.net/menu/557/4571/mper_arch_47801_POA%202021.pdf">
+					<h3>Plan operativo anual</h3>
+					<p>Conoce el plan operativo anual de la institución</p>
+				</a></li>
+
+
+
+		</ul>
+
+		<br>
+
+
+
+
+		<div class="barra-pie" data-position="fixed" data-role="footer" data-theme="b">
+
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#menu"><i class="fas fa-home"></i></a></li>
+					<li><a href="#favoritos"><i class="fas fa-heart"></i></a></li>
+					<li><a href="#perfil"><i class="fas fa-user"></i></a></li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+		app.initialize();
+	</script>
+</body>
+
+</html>

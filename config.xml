@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.ibe.app" version="1.2.6" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>IBE APP</name>
+    <description>
+        Aplicación creada con el fin de identificar los casos de acoso escolar.
+    </description>
+    <author email="kevinquiroz1205@hotmail.com" href="www.instagram.com/kquirozg30">
+        Kevin Quiroz, Lorena Ruiz, Isabella Márquez
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+        <icon src="www/img/logo.png"/>
+        <preference name="SplashScreenDelay" value="10000" />
+        <platform name="android">
+    <splash src="www/res/screen/android/splash-port-hdpi.png" density="port-hdpi"/>
+    <splash src="www/res/screen/android/splash-port-ldpi.png" density="port-ldpi"/>
+    <splash src="www/res/screen/android/splash-port-mdpi.png" density="port-mdpi"/>
+    <splash src="www/res/screen/android/splash-port-xhdpi.png" density="port-xhdpi"/>
+</platform>
+</widget>
